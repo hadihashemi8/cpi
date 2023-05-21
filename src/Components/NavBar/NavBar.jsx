@@ -89,7 +89,7 @@ export default function NavBar(props) {
 
                     <NavLink to="/Backet" className="relative">
                         <img className='mx-1 lg:w-[28px]' src="/./src/assets/icons/shopping-cart-black.svg" alt="" />
-                        <span className='w-5 h-5 bg-main-green2 rounded-full absolute -top-[15%] -right-[15%] flex items-center justify-around text-white text-[10px] '>2</span>
+                        <span className='w-4 h-4 bg-main-green2 rounded-full absolute -top-[15%] -right-[15%] flex items-center justify-around text-white text-[10px] '>2</span>
                     </NavLink>
                     <img className='mx-1 lg:hidden' src="/./src/assets/icons/Line 55.svg" alt="" />
                     <img className='mx-1 lg:hidden' src="/./src/assets/icons/search-normal-black.svg" alt="" />
