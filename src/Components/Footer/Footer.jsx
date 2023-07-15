@@ -12,47 +12,12 @@ export default function Footer() {
                         <p className='text-center text-[12px] lg:w-3/4 lg: lg:text-justify md:text-base mt-4'>بزرگترین مرجع خرید و قیمت کارتن پلاست در ایران گروه صنعتی ایران کارتن پلاست می باشد. محصولات ما با ضخامت هاي 2-12 ميل و گراماژهاي متفاوت تولید می شود ،ما دارای بزگترین کارخانه محصولات تبدیلی کارتن پلاست در ایران می باشیم . </p>
                     </div>
 
-                    <div className='flex flex-col items-center mt-20 md:mt-0 md:col-span-2 lg:col-span-1 '>
-                        <h2 className='text-[16px] md:text-[20px] font-semibold md:text-main-green2'>دسته بندی محصولات</h2>
-                        <div className='flex justify-around flex-wrap items-center md:flex-col md:items-center  mt-4'>
-                            <p className='w-1/3 md:w-full md:text-[16px] flex flex-row-reverse justify-evenly items-center text-sm mt-4  '>
-                                <img className='md:hidden' src="/./src/assets/icons/trush-square.svg" alt="" />
-                                بازیافت
-                            </p>
-                            <p className='w-1/3 md:w-full md:text-[16px] flex flex-row-reverse justify-evenly items-center text-sm mt-4  '>
-                                <img className='md:hidden' src="/./src/assets/icons/buildings.svg" alt="" />
-                                ساختمان
-                            </p>
-                            <p className='w-1/3 md:w-full md:text-[16px] flex flex-row-reverse justify-evenly items-center text-sm mt-4  '>
-                                <img className='md:hidden' src="/./src/assets/icons/building.svg" alt="" />
-                                تبلیغات
-                            </p>
-                            <p className='w-1/3 md:w-full md:text-[16px] flex flex-row-reverse justify-evenly items-center text-sm mt-4  '>
-                                <img className='md:hidden' src="/./src/assets/icons/car.svg" alt="" />
-                                خودرو
-                            </p>
-                            <p className='w-1/3 md:w-full md:text-[16px] flex flex-row-reverse justify-evenly items-center text-sm mt-4  '>
-                                <img className='md:hidden' src="/./src/assets/icons/box-green.svg" alt="" />
-                                بسته بندی
-                            </p>
-
-                        </div>
-                    </div>
-
-                    <div className='mt-28 md:mt-0 flex flex-col items-center  md:col-span-2 lg:col-span-1   '>
-                        <h2 className='text-[20px] font-semibold text-main-green2'>مجوزها و نمادها</h2>
-                        <div className='flex mt-4'>
-                            <img className='mx-2' src="/./src/assets/images/namad-1.svg" alt="" />
-                            <img className='mx-2' src="/./src/assets/images/aghayepardakht-1 1.svg" alt="" />
-                        </div>
-                    </div>
 
 
                     <div className=' mt-8 lg:mt-0 flex-col items-center hidden md:flex md:col-span-3 lg:col-span-2  '>
                         <img  src="/./src/assets/logo/logo.svg" alt="" />
                         <ul className='flex mt-4'>
                             <li className='mx-2'>تماس با ما</li>
-                            <li className='mx-2'>محصولات</li>
                             <li className='mx-2'>درباره ما</li>
                             <li className='mx-2'>وبلاگ</li>
                         </ul>
