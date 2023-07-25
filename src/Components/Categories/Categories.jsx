@@ -1,13 +1,19 @@
 import React from 'react'
 import CategoryBox from '../CategoryBox/CategoryBox'
+import p1 from "/./src/assets/icons/trush-square.svg"
+import p2 from "/./src/assets/icons/building.svg"
+import p3 from "/./src/assets/icons/car.svg"
+import p4 from "/./src/assets/icons/box-green.svg"
+import p5 from "/./src/assets/icons/buildings.svg"
+import line from "/./src/assets/icons/Line 6.svg"
 
 
 const categoriesItem = [
-    {id:1 , src:"./src/assets/icons/trush-square.svg" , title:"بازیافت"},
-    {id:2 , src:"./src/assets/icons/building.svg" , title:"تبلیغات"},
-    {id:3 , src:"./src/assets/icons/car.svg" , title:"خودرو"},
-    {id:4 , src:"./src/assets/icons/box-green.svg" , title:"بسته بندی"},
-    {id:5 , src:"./src/assets/icons/buildings.svg" , title:"ساختمان"},
+    {id:1 , src:p1 , title:"بازیافت"},
+    {id:2 , src:p2 , title:"تبلیغات"},
+    {id:3 , src:p3 , title:"خودرو"},
+    {id:4 , src:p4 , title:"بسته بندی"},
+    {id:5 , src:p5 , title:"ساختمان"},
 ]
 
 export default function Categories({title}) {
@@ -16,9 +22,9 @@ export default function Categories({title}) {
             <div className='flex flex-col items-center  '>
 
                 <div className='flex justify-around w-full '>
-                    <img className='hidden lg:block ' src="/./src/assets/icons/Line 6.svg" alt="" />
+                    <img className='hidden lg:block ' src={line} alt="" />
                     <h2 className='text-[20px] mx-2 font-semibold'>{title}</h2>
-                    <img className='hidden lg:block ' src="/./src/assets/icons/Line 6.svg" alt="" />
+                    <img className='hidden lg:block ' src={line} alt="" />
                 </div>
 
                 {/* categories box container */}

@@ -8,6 +8,7 @@ import SmallArticleBox from '../../Components/SmallArticleBox/SmallArticleBox'
 export default function Articles() {
 
   const [showLgArticle, setShowLgArticle] = useState(false)
+  const [blogs, setBlogs] = useState([])
 
   useEffect(() => {
 
@@ -26,6 +27,13 @@ export default function Articles() {
     })
   }, [])
 
+  useEffect(() => {
+    fetch("https://cpico.ir/api/AllArticles")
+      .then(res => res.json())
+      .then(datas => {
+       
+        setBlogs(datas.data)})
+  }, [])
 
 
   return (
@@ -36,20 +44,19 @@ export default function Articles() {
       <div className='mt-6 p-4 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3  md:px-10 lg:px-14   gap-4 lg:gap-8   justify-items-center '>
         {
           showLgArticle ? (
-            <>
-              <ArticleBox />
-              <ArticleBox />
-              <ArticleBox />
-              <ArticleBox />
-            </>
-          ) : (
-            <>
-              <SmallArticleBox />
-              <SmallArticleBox />
-              <SmallArticleBox />
-              <SmallArticleBox />
-            </>
 
+            blogs.length > 0 && blogs?.map(item => (
+              <ArticleBox key={item.id} {...item} />
+            ))
+
+          ) : (
+            
+
+            blogs.length > 0 && blogs?.map(item => (
+             
+              <SmallArticleBox key={item.id} {...item}/>
+            ))
+        
           )
         }
       </div>

@@ -2,13 +2,16 @@ import React, { useState } from 'react'
 import Categories from '../../Components/Categories/Categories'
 import Footer from '../../Components/Footer/Footer'
 import Properties from '../../Components/Properties/Properties'
-
 import ContactUsWay from '../../Components/ContactUsWay/ContactUsWay'
 import NavBar from '../../Components/NavBar/NavBar'
+import logo from "/./src/assets/logo/logo.svg"
+import rectangle1 from "/./src/assets/images/Rectangle 14.svg"
+import rectangle2 from "/./src/assets/polygons/Rectangle 15.svg"
+
+
+
 
 export default function AboutUs() {
-
-
 
 
 
@@ -17,19 +20,13 @@ export default function AboutUs() {
       <NavBar style2={true} />
 
 
-
-
       {/* aboutus header */}
-      <div className='w-full  flex items-center justify-center pb-20 md:pb-40 pt-12 md:pt-28 bg-[url("./src/assets/images/AboutUs-Bg.png")] bg-cover bg-no-repeat bg-center'>
+      <div className='w-full  flex items-center justify-center pb-20 md:pb-40 pt-12 md:pt-28 bg-[url("/./src/assets/images/AboutUs-Bg.png")] bg-cover bg-no-repeat bg-center'>
         <div className='flex flex-col items-center '>
-          <img className='md:w-32' src="./src/assets/logo/logo.svg" alt="" />
+          <img className='md:w-32' src={logo} alt="" />
           <h1 className='text-white text-2xl md:text-4xl font-semibold mt-4'>کارتن پلاست ایرانیان</h1>
           <h1 className='text-[#244938] text-2xl md:text-4xl font-semibold mt-2 md:mt-4'>Cartonplast Iranians</h1>
-          <div className='flex flex-row-reverse mt-4'>
-            <img className='mx-2 ' src="/./src/assets/icons/frame 15.svg" alt="" />
-            <img className='mx-2 ' src="/./src/assets/icons/frame 16.svg" alt="" />
-            <img className='mx-2 ' src="/./src/assets/icons/frame 17.svg" alt="" />
-          </div>
+          
         </div>
       </div>
 
@@ -42,8 +39,8 @@ export default function AboutUs() {
           <h3 className='text-[#42A476] text-2xl font-semibold md:hidden'>درباره ما</h3>
           <div className='  flex justify-around  md:w-1/2 ' >
             <div className='relative lg:w-96 flex '>
-              <img className='z-10 w-full' src="/./src/assets/images/Rectangle 14.svg" alt="" />
-              <img className='absolute top-11 lg:top-14  -left-4 w-[90%]' src="/./src/assets/polygons/Rectangle 15.svg" alt="" />
+              <img className='z-10 w-full' src={rectangle1} alt="" />
+              <img className='absolute top-11 lg:top-14  -left-4 w-[90%]' src={rectangle2} alt="" />
             </div>
           </div>
 

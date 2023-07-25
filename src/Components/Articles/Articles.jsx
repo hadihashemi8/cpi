@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import ArticleBox from '../ArticleBox/ArticleBox'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -7,15 +7,30 @@ import { Link } from 'react-router-dom';
 // import "./NewProducts.css";
 
 
-export default function Articles({title}) {
+export default function Articles({ title }) {
+
+    const [blogs, setBlogs] = useState([])
+
+
+
+    useEffect(() => {
+        fetch("https://cpico.ir/api/AllArticles")
+            .then(res => res.json())
+            .then(datas => {
+
+                setBlogs(datas.data)
+            })
+    }, [])
+
+
     return (
         <div className=' pt-36 '>
             <div className=' flex flex-col items-center '>
                 <h2 className='text-[20px]'>{title}</h2>
-                <div className='relative mt-8 w-full flex flex-col items-center px-8  lg:px-20' >
-                <Swiper
+                <div className='relative mt-8 w-full flex flex-col items-center  lg:px-8 ' >
+                    <Swiper
                         slidesPerView={1}
-                        spaceBetween={20}
+                        spaceBetween={40}
                         pagination={{
                             clickable: true,
                         }}
@@ -36,24 +51,17 @@ export default function Articles({title}) {
                         }}
                         loop={true}
                         // modules={[Navigation]}
-                        className="mySwiper relative p-4 py-8   w-full "
+                        className="mySwiper relative  py-8   w-full  px-4"
                     >
-                        <SwiperSlide >
-                          <ArticleBox />
-                        </SwiperSlide>
-                        <SwiperSlide >
-                          <ArticleBox />
-                        </SwiperSlide>
-                        <SwiperSlide >
-                          <ArticleBox />
-                        </SwiperSlide>
-                        <SwiperSlide >
-                          <ArticleBox />
-                        </SwiperSlide>
-                      
+                        {blogs.map(item => (
+                            <SwiperSlide key={item.id} className='flex items-center justify-around'>
+                                <ArticleBox {...item} />
+                            </SwiperSlide>
+                        ))}
+
                     </Swiper>
                     <Link to="/Articles">
-                    <button className='border-[1px] border-main-green2 font-semibold py-2 px-12 rounded-lg mt-8 text-main-green2'>مشاهده همه</button>
+                        <button className='border-[1px] border-main-green2 font-semibold py-2 px-12 rounded-lg mt-8 text-main-green2'>مشاهده همه</button>
                     </Link>
                 </div>
             </div>

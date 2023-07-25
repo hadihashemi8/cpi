@@ -1,4 +1,9 @@
 import React from 'react'
+import verify from "/./src/assets/icons/verify.svg"
+import messages from "/./src/assets/icons/messages-2.svg"
+import dollar from "/./src/assets/icons/dollar-circle.svg"
+import truck from "/./src/assets/icons/truck-time.svg"
+
 
 export default function Properties() {
   return (
@@ -10,25 +15,25 @@ export default function Properties() {
 
           <div className='flex flex-col items-center mx-2'>
             <div>
-              <img src="/./src/assets/icons/verify.svg" alt="" />
+              <img src={verify} alt="" />
             </div>
             <h3 className='mt-2'>تضمین کیفیت</h3>
           </div>
           <div className='flex flex-col items-center mx-2'>
             <div>
-              <img src="/./src/assets/icons/messages-2.svg" alt="" />
+              <img src={messages} alt="" />
             </div>
             <h3 className='mt-2'>پشتیبانی 24 ساعته</h3>
           </div>
           <div className='flex flex-col items-center mx-2'>
             <div>
-              <img src="/./src/assets/icons/dollar-circle.svg" alt="" />
+              <img src={dollar} alt="" />
             </div>
             <h3 className='mt-2'>قیمت مناسب</h3>
           </div>
           <div className='flex flex-col items-center mx-2'>
             <div>
-              <img src="/./src/assets/icons/truck-time.svg" alt="" />
+              <img src={truck} alt="" />
             </div>
             <h3 className='mt-2'>ارسال به موقع</h3>
           </div>
