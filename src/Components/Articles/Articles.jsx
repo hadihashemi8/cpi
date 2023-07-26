@@ -51,13 +51,14 @@ export default function Articles({ title }) {
                         }}
                         loop={true}
                         // modules={[Navigation]}
-                        className="mySwiper relative  py-8   w-full  px-4"
+                        className="mySwiper relative  py-8    w-full   px-4"
                     >
                         {blogs.map(item => (
-                            <SwiperSlide key={item.id} className='flex items-center justify-around'>
+                            <SwiperSlide key={item.id} className='flex  items-center justify-around'>
                                 <ArticleBox {...item} />
                             </SwiperSlide>
                         ))}
+                        
 
                     </Swiper>
                     <Link to="/Articles">

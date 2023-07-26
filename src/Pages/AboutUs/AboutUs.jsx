@@ -7,7 +7,7 @@ import NavBar from '../../Components/NavBar/NavBar'
 import logo from "/./src/assets/logo/logo.svg"
 import rectangle1 from "/./src/assets/images/Rectangle 14.svg"
 import rectangle2 from "/./src/assets/polygons/Rectangle 15.svg"
-
+import {Link} from "react-router-dom"
 
 
 
@@ -48,7 +48,9 @@ export default function AboutUs() {
             <h3 className='text-[#42A476] text-2xl font-semibold hidden md:block'>درباره ما</h3>
             <p className='text-sm text-[#929292] mt-14 md:mt-6 text-justify'>بزرگترین مرجع خرید و قیمت کارتن پلاست در ایران گروه صنعتی ایران کارتن پلاست می باشد. محصولات ما با ضخامت هاي 2-12 ميل و گراماژهاي متفاوت تولید می شود ،ما دارای بزگترین کارخانه محصولات تبدیلی کارتن پلاست در ایران می باشیم . این محصولات به دلیل نداشتن آثار تخريبي بر محيط زيست ، در دنيا به عنوان صنعت سبز شناخته میشود . محصول اصلی به دو شکل رول و ورق تولید میگردد که هر کدام در صنایع مختلفی کاربردهای اساسی دارد .بزرگترین مرجع خرید و قیمت کارتن پلاست در ایران گروه صنعتی ایران کارتن پلاست می باشد. محصولات ما با ضخامت هاي 2-12 ميل و گراماژهاي متفاوت تولید می شود ،ما دارای بزگترین کارخانه محصولات تبدیلی کارتن پلاست در ایران می باشیم . این محصولات به دلیل نداشتن آثار تخريبي بر محيط زيست ، در دنيا به عنوان صنعت سبز شناخته میشود . محصول اصلی به دو شکل رول و ورق تولید میگردد که هر کدام در صنایع مختلفی کاربردهای اساسی دارد .
             </p>
+            <Link to="/ContactUs">
             <button className='text-white bg-main-green2  text-base py-2 px-10 rounded-lg mt-8'>تماس با ما</button>
+            </Link>
           </div>
         </div>
       </div>

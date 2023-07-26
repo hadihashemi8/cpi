@@ -14,7 +14,7 @@ export default function Footer() {
 
                     <div className='flex flex-col items-center  mt-8 md:mt-0 md:col-span-3  '>
                         <h2 className='text-2xl font-semibold text-main-green2'>کارتن پلاست ایرانیان</h2>
-                        <p className='text-center text-[12px] lg:w-3/4 lg: lg:text-justify md:text-base mt-4'>بزرگترین مرجع خرید و قیمت کارتن پلاست در ایران گروه صنعتی ایران کارتن پلاست می باشد. محصولات ما با ضخامت هاي 2-12 ميل و گراماژهاي متفاوت تولید می شود ،ما دارای بزگترین کارخانه محصولات تبدیلی کارتن پلاست در ایران می باشیم . </p>
+                        <p className='text-center text-[12px] lg:w-3/4 lg: lg:text-justify md:text-base mt-4'>بزرگترین مرجع خرید  کارتن پلاست در ایران گروه صنعتی  کارتن پلاست ایرانیان می باشد. محصولات ما با ضخامت هاي 2-12 ميل و گراماژهاي متفاوت تولید می شود ،ما دارای بزگترین کارخانه محصولات تبدیلی کارتن پلاست در ایران می باشیم . </p>
                     </div>
 
 
